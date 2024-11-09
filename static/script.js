@@ -1,15 +1,13 @@
 function sendMessage() {
   const userInputElement = document.getElementById("user-input");
   const userInput = userInputElement.value;
-  userInputElement.selectedIndex = 0; // Reset dropdown to placeholder
+  userInputElement.selectedIndex = 0;
 
-  if (!userInput) return; // Skip if no option is selected
+  if (!userInput) return;
 
-  // Display user message in chat box
   const chatBox = document.getElementById("chat-box");
   chatBox.innerHTML += `<div class="user">User: ${userInput}</div>`;
 
-  // Fetch bot response
   fetch("/get_response", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -18,6 +16,6 @@ function sendMessage() {
     .then((response) => response.json())
     .then((data) => {
       chatBox.innerHTML += `<div class="bot">Bot: ${data.response}</div>`;
-      chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
+      chatBox.scrollTop = chatBox.scrollHeight;
     });
 }

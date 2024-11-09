@@ -1,4 +1,3 @@
-/* General chat container styling */
 .chat-container {
   width: 350px;
   margin: 50px auto;
@@ -9,7 +8,6 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styling */
 .chat-header {
   background-color: #4a90e2;
   color: white;
@@ -18,7 +16,6 @@
   font-weight: bold;
 }
 
-/* Chat box styling */
 .chat-box {
   height: 250px;
   padding: 10px;
@@ -27,7 +24,6 @@
   border-top: 1px solid #ddd;
 }
 
-/* Styling for user input */
 .input-area {
   display: flex;
   padding: 10px;
@@ -59,7 +55,6 @@
   background-color: #357abd;
 }
 
-/* Chat message styling */
 .chat-box div {
   margin: 5px 0;
 }
