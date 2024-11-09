@@ -35,14 +35,14 @@ codsoft_taskno.1/
 
 - Python 3.x
 - Flask
-
+````
 ## Setup Instructions
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/SocialisticO4/codsoft_taskno.1.git
    cd codsoft_taskno.1
-````
+
 
 2. **Install Dependencies**:
    Install Flask by running:
