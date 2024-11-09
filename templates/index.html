@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodSoft Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">Chatbot</div>
+      <div id="chat-box" class="chat-box"></div>
+
+      <!-- Dropdown for user options -->
+      <div class="input-area">
+        <select id="user-input" class="user-input">
+          <option value="" disabled selected>Select a question...</option>
+          <option value="hello">Hello</option>
+          <option value="how are you">How are you?</option>
+          <option value="what is your name">What is your name?</option>
+          <option value="tell me a joke">Tell me a joke</option>
+          <option value="bye">Goodbye</option>
+          <option value="what can you do">What can you do?</option>
+        </select>
+        <button onclick="sendMessage()" class="send-button">Send</button>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
